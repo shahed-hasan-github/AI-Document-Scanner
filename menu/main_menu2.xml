@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/threer"
+        android:title="QR Scan"/>
+
+    <item
+        android:id="@+id/fiver"
+        android:title="Rate app"/>
+
+</menu>

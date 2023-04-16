@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF1F5"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top_crd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/menubtn1"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="#EDF1F5"
+                android:onClick="openmenu"
+                android:src="@drawable/ic_baseline_menu_24"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/menubtn2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                android:backgroundTint="#A3A3A3"
+                android:onClick="openmenu2" />
+
+            <TextView
+                android:id="@+id/txtv_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/interbld"
+                android:text="Scan"
+                android:textColor="#262626"
+                android:textSize="26sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/svbtn2"
+                style="?borderlessButtonStyle"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/svbtn"
+                android:background="@drawable/rds2"
+                android:backgroundTint="#FF9933"
+                android:fontFamily="@font/intermdm"
+                android:text="Note"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/svbtn"
+                style="?borderlessButtonStyle"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rds2"
+                android:backgroundTint="@color/ui_color"
+                android:fontFamily="@font/intermdm"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/txtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/intermdm"
+                android:text="Result"
+                android:textColor="#151515"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/adbtn"
+        style="?borderlessButtonStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top_crd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/comp2"
+        android:visibility="gone"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txt_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="23.5dp"
+        android:fontFamily="@font/intermdm"
+        android:text="Apps"
+        android:textColor="#6C6C6C"
+        android:textSize="12.5sp"
+        android:visibility="gone"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@id/slt"
+        android:layout_below="@+id/top_crd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="110dp"
+
+
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/top_crd"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="54dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="a1.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/unclk"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_above="@+id/slt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rds"
+        android:backgroundTint="#02B820"
+        android:fontFamily="@font/font2"
+        android:onClick="rdrc_unlock"
+        android:text="Unlock"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/slt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/dtc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/nue_btn"
+        android:fontFamily="@font/ggl"
+        android:onClick="selectImage"
+        android:text="Select Image"
+        android:textAllCaps="false"
+        android:textColor="#323232"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/dtc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/banner_container"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/nue_btn"
+        android:fontFamily="@font/ggl"
+        android:onClick="startRecognizing"
+        android:text="Tap For Scan"
+        android:textAllCaps="false"
+        android:textColor="#323232"
+        android:textSize="18sp" />
+
+
+    <ScrollView
+        android:id="@+id/scview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bttn"
+        android:layout_below="@+id/top_crd"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rds"
+            android:backgroundTint="#E6EAEF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#111"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bttn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/banner_container"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/nue_btn"
+        android:fontFamily="@font/ggl"
+        android:onClick="again"
+        android:text="Go back"
+        android:textAllCaps="false"
+        android:textColor="#323232"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</RelativeLayout>
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context=".No_internet">
+
+    <RelativeLayout
+android:id="@+id/nointernet_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+
+    <TextView
+        android:id="@+id/offp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offline_mode"
+        android:fontFamily="@font/font2"
+        android:textSize="45sp"
+
+        android:textColor="#02B820"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/cntr2"/>
+
+        <RelativeLayout
+            android:id="@+id/cntr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/pim2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="a2.json"
+                app:lottie_loop="true" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_text"
+        android:fontFamily="@font/ggl"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="#111"
+        android:layout_above="@+id/unclk_nointernet"/>
+
+
+
+    <Button
+        android:id="@+id/unclk_nointernet"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rds"
+        android:fontFamily="@font/font2"
+        android:backgroundTint="#02B820"
+        android:layout_centerHorizontal="true"
+        android:onClick="rdrc_unlock_features"
+        android:text="Unlock"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

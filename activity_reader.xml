@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context=".Reader">
+
+    <TextView
+        android:id="@+id/nm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/maven_pro_black"
+        android:text="adoc"
+        android:textColor="#000"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editText_rd"
+        android:layout_below="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rdr"
+        android:layout_margin="20dp"
+        android:background="@drawable/rds"
+        android:backgroundTint="#E0E4E8"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Paste text here"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#111"
+        android:textSize="18sp"
+        app:layout_goneMarginTop="40dp" />
+
+    <RelativeLayout
+        android:id="@+id/rdr"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rds"
+        android:backgroundTint="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_hearing_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

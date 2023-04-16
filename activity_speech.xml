@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context=".Speech">
+    <TextView
+        android:id="@+id/nm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:text="adoc"
+        android:fontFamily="@font/rotamdm"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="32sp" />
+    <EditText
+        android:id="@+id/editText_sp"
+        android:layout_below="@+id/nm1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spch"
+        android:layout_margin="20dp"
+        android:background="@drawable/rds"
+        android:backgroundTint="#f5f5f5"
+        android:ems="10"
+        android:hint="Text will be shown here"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#111"
+        android:textSize="18sp"
+        app:layout_goneMarginTop="40dp" />
+
+    <RelativeLayout
+        android:id="@+id/spch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rds"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="getSpeechInput">
+
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_keyboard_voice_24" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

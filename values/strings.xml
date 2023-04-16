@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Speech app</string>
+
+
+    <string name="tst_Ads">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="tst_App">ca-app-pub-3940256099942544~3347511713</string>
+
+
+    <string name="unlock">Unlock</string>
+    <string name="features">• Unlimited fast scan.\n• Highest scan accuracy.\n• Offline support.\n• Write document with your voice.\n• Get reading assistant.\n• Word counter.</string>
+
+
+    <string name="admob_app_id">ca-app-pub-4558489128376134~6220598961</string>
+    <string name="bnr_id">ca-app-pub-4558489128376134/9372202451</string>
+    <string name="int_id">ca-app-pub-4558489128376134/7348674343</string>
+
+
+    <string name="offline_mode">Offline mode\nis a premium feature. </string>
+    <string name="offline_mode2">Unlock\nOffline mode\nand more. </string>
+    <string name="payment_text">Single payment for <b>lifetime</b> </string>
+    <string name="bill_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAphfV4KcLpZxt685IfPv8YcD/FxIdnEwZ/+G6HF+zjud2HE5X3BHFviQUyYnxL9E1fCDe87THPEIcuAZomTjA2QAnOtMs1Iso12uDflT696wwuMCkEa5Ssb8Xm+GlxH8E+Nywe5199qg7kwxnhmVy3tFSX2IqlcKkJwdZGLnjEtMzSe3jAjRBtOV5Ell4VRuULZiuv7vjYLCW9hhwqpNCpWARTeP22CeDWeDmTyLtUTkr69v4oUcS9+KyzuydnkO8XXCAR3513uOQSDCQxxM29V53xbODYzK2xTLn/Eprt7vIg7RB9rE9XFMYPFERY5a9iLCFd9r/XyyIZSgbu6oxGwIDAQAB</string>
+
+
+    <string name="admob_app_id_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="bnr_id_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="int_id_test">ca-app-pub-3940256099942544/1033173712</string>
+
+</resources>
