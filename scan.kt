@@ -60,9 +60,9 @@ class scan : AppCompatActivity(), BillingProcessor.IBillingHandler {
     lateinit var menubtn1: ImageButton
     lateinit var menubtn2: ImageButton
 
-    private val APP_ID = "app1cc2e3c6614d4fe5ab"
-    private val INT_ZONE_ID = "vz3e014ce46f474feaa5"
-    private val BNR_ZONE_ID = "vz06ade85e6e9a418797"
+    private val APP_ID = ""
+    private val INT_ZONE_ID = ""
+    private val BNR_ZONE_ID = ""
     lateinit var bnrshow: RelativeLayout
     var showButton: Button? = null
     private var adView: AdView? = null
@@ -123,7 +123,7 @@ class scan : AppCompatActivity(), BillingProcessor.IBillingHandler {
             dtc = findViewById(R.id.dtc)
 
             svbtn2.setOnClickListener() {
-                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.notepad.notesapp")))
+                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("")))
 
 
 
@@ -158,7 +158,7 @@ class scan : AppCompatActivity(), BillingProcessor.IBillingHandler {
         )
         bp.initialize()
         bp.loadOwnedPurchasesFromGoogle();
-        if (bp.isPurchased("docsn124")) {
+        if (bp.isPurchased("")) {
 
             try {
                 unlock.visibility = View.GONE
@@ -389,9 +389,9 @@ class scan : AppCompatActivity(), BillingProcessor.IBillingHandler {
         popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.threer ->
-                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.aapp.qrscanner")))
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("")))
                 R.id.fiver ->
-                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=scanner.document.documentscanner")))
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("")))
 
 
             }
