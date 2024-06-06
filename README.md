@@ -1,4 +1,3 @@
-
 <h1>AI Document Scanner</h1>
 
 <h2>Description</h2>
